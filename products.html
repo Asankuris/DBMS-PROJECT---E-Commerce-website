@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Our Products - ShopSmart</title>
+</head>
+<body>
+    <header>
+        <h1>E-commerce Store Products</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Search Bar -->
+        <section class="search-bar">
+            <input type="text" id="product-search" name="search" placeholder="Search products...">
+            <button type="button" onclick="searchProduct()">Search</button>
+        </section>
+
+        <!-- Product Listing -->
+        <section class="product-item">
+            <h2>Browse Our Products</h2>
+            <div class="products">
+                <!-- Mock Product Data -->
+                <div class="product-item">
+                    <img src="images/product1.jpg" alt="Product 1">
+                    <h3>Product Name 1</h3>
+                    <p>Description for product 1...</p>
+                    <p class="price">$39.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Repeat blocks like the above for each product item -->
+            </div>
+        </section>
+
+        <!-- Insert New Product Form (Assuming for Admins/Users) -->
+        <section class="insert-product">
+            <h2>List a New Product</h2>
+            <form id="insert-product-form" action="path-to-your-insert-product-script" method="post">
+                <div class="form-group">
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" name="product_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Description:</label>
+                    <textarea id="product-description" name="product_description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Price:</label>
+                    <input type="text" id="product-price" name="product_price" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-image">Image URL:</label>
+                    <input type="text" id="product-image" name="product_image" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">List Product</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-commerce</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

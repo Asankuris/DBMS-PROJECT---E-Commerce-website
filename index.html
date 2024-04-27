@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome to ShopSmart</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to E-commerce website</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Login Box -->
+        <div class="login-box">
+            <h2>Login to Your Account</h2>
+            <form action="path-to-your-login-script" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <!-- Product items will be dynamically loaded here -->
+            <!-- Example of a product -->
+            <div class="product-item">
+                <img src="images/product1.jpg" alt="Stylish Shirt">
+                <h3>Stylish Shirt</h3>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Repeat for other products -->
+        </section>
+
+        <!-- Today's Deals Section -->
+        <section class="today-deals">
+            <h2>Today's Deals</h2>
+            <!-- Deal items will be dynamically loaded here -->
+            <!-- Example of a deal -->
+            <div class="deal-item">
+                <img src="images/deal1.jpg" alt="Smart Watch">
+                <h3>Smart Watch</h3>
+                <span class="original-price">$299.99</span>
+                <span class="sale-price">$249.99</span>
+                <button>Shop Now</button>
+            </div>
+            <!-- Repeat for other deals -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ShopSmart</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
